@@ -38,7 +38,7 @@ export const myFonts = {
         small: '.875rem',
         smaller: '.813rem',
     },
-    weight: {
+    fontWeight: {
         medium: 500,
         semiBold: 600,
     },

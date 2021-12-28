@@ -12,7 +12,7 @@ export const useStyles = makeStyles({
 
     nav__logo: {
         color: `${myColors.titleColor}`,
-        fontWeight: myFonts.weight.medium,
+        fontWeight: myFonts.fontWeight.medium,
         '&:hover': {
             color: `${myColors.firstColor}`
         },
@@ -20,7 +20,7 @@ export const useStyles = makeStyles({
 
     nav__toggle: {
         color: `${myColors.titleColor}`,
-        fontWeight: myFonts.weight.medium,
+        fontWeight: myFonts.fontWeight.medium,
         '&:hover': {
             color: `${myColors.firstColor}`,
             cursor: 'pointer',
@@ -39,7 +39,7 @@ export const useStyles = makeStyles({
             padding: '2.5rem 1.5rem 4rem',
             boxShadow: '0 -1px 4px rgba(0,0,0,.15)',
             borderRadius: '1.5rem 1.5rem 0 0',
-            transition: '.3s '
+            transition: '.3s'
         },
     },
 
@@ -54,7 +54,7 @@ export const useStyles = makeStyles({
         flexDirection: 'column',
         alignItems: 'center',
         fontSize: `${myFonts.fontSize.small}`,
-        fontWeight: myFonts.weight.medium,
+        fontWeight: myFonts.fontWeight.medium,
         color: `${myColors.titleColor}`,
         '& svg': {
             marginBottom: '0.3rem',

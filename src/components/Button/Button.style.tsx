@@ -8,7 +8,7 @@ export const useStyles = makeStyles({
         color: "#fff",
         padding: "1rem",
         borderRadius: ".5rem",
-        fontWeight: myFonts.weight.medium,
+        fontWeight: myFonts.fontWeight.medium,
         alignItems: "center",
         transition: ".3s",
         '& svg': {

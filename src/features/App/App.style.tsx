@@ -20,7 +20,8 @@ export const useStyles = makeStyles({
         },
         'h1, h2, h3, h4': {
             color: myColors.titleColor,
-            fontWeight: myFonts.weight.semiBold,     
+            fontWeight: myFonts.fontWeight.semiBold,  
+            margin: 0,   
         },
         'ul': {
             listStyle: 'none',

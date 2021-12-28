@@ -4,10 +4,11 @@ type ButtonLinkProps = {
   href: string | undefined;
   className?: string;
   target?: string;
+  download?: string;
   children?: React.ReactElement | Array<React.ReactElement>;
 };
 
-const ButtonLink = ({ href, className, target, children }: ButtonLinkProps) => {
+const ButtonLink = ({ href, className, target, download, children }: ButtonLinkProps) => {
   
   const classes = useStyles()
 
@@ -19,6 +20,7 @@ const ButtonLink = ({ href, className, target, children }: ButtonLinkProps) => {
       className={`${className} ${classes.button}`}
       target={target}
       rel={rel}
+      download={download}
     >
       {children}
     </a>

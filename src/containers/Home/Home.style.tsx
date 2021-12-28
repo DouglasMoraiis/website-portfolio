@@ -46,7 +46,7 @@ export const useStyles = makeStyles({
     home__subtitle: {
         fontSize: myFonts.fontSize.h3,
         color: myColors.textColor,
-        fontWeight: myFonts.weight.medium,
+        fontWeight: myFonts.fontWeight.medium,
         marginBottom: myMarginBottom.mb0_75,
     },
     home__description: {
@@ -64,11 +64,9 @@ export const useStyles = makeStyles({
     },
     home__scroll_name: {
         fontSize: myFonts.fontSize.small,
-        fontWeight: myFonts.weight.medium,
+        fontWeight: myFonts.fontWeight.medium,
         color: myColors.titleColor,
         margin: myMarginBottom.mb0_25
     },
-
-
 })
 
