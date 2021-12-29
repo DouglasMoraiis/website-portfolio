@@ -1,23 +1,22 @@
-import { useState } from "react";
-
-import Section from "../../components/Section/Section";
-import Button from "../../components/Button/Button";
-
-import SkillsItem from "../../components/SkillsItem/SkillsItem";
-import SkillsItemHeader from "../../components/SkillsItem/SkillsItemHeader/SkillsItemHeader";
-import SkillsItemContent from "../../components/SkillsItem/SkillsItemContent/SkillsItemContent";
-import SkillsItemElement from "../../components/SkillsItem/SkillsItemElement/SkillsItemElement";
+import { useState } from 'react';
 
 import {
   UilBracketsCurly,
   UilServerNetwork,
-  UilSwatchbook,
-} from "@iconscout/react-unicons";
+  UilSwatchbook
+} from '@iconscout/react-unicons';
+import Section from '../../components/Section/Section';
+/* import Button from '../../components/Button/Button'; */
 
-import { useStyles } from "./Skills.style";
-import { myIconSizes } from "../../theme";
+import SkillsItem from '../../components/SkillsItem/SkillsItem';
+import SkillsItemHeader from '../../components/SkillsItem/SkillsItemHeader/SkillsItemHeader';
+import SkillsItemContent from '../../components/SkillsItem/SkillsItemContent/SkillsItemContent';
+import SkillsItemElement from '../../components/SkillsItem/SkillsItemElement/SkillsItemElement';
 
-const Skills = () => {
+import { useStyles } from './Skills.style';
+import { myIconSizes } from '../../theme';
+
+function Skills() {
   const classes = useStyles();
 
   const [skillsItem1, setSkillsItem1] = useState(false);
@@ -53,12 +52,21 @@ const Skills = () => {
           <SkillsItem>
             <SkillsItemHeader
               toggleItem={toggleSkillsItem1}
-              className={skillsItem1 ? classes.skills__icon_open : classes.skills__icon_close}
+              className={
+                skillsItem1
+                  ? classes.skills__icon_open
+                  : classes.skills__icon_close
+              }
               title="Frontend developer"
               subtitle="More than 4 years"
               icon={<UilBracketsCurly size={myIconSizes.big} />}
             />
-            <SkillsItemContent className={skillsItem1 ? classes.skills__open : classes.skills__close}>
+
+            <SkillsItemContent
+              className={
+                skillsItem1 ? classes.skills__open : classes.skills__close
+              }
+            >
               <SkillsItemElement
                 name="HTML"
                 number="85%"
@@ -80,12 +88,20 @@ const Skills = () => {
           <SkillsItem>
             <SkillsItemHeader
               toggleItem={toggleSkillsItem2}
-              className={skillsItem2 ? classes.skills__icon_open : classes.skills__icon_close}
+              className={
+                skillsItem2
+                  ? classes.skills__icon_open
+                  : classes.skills__icon_close
+              }
               title="Backend developer"
               subtitle="More than 2 years"
               icon={<UilServerNetwork size={myIconSizes.big} />}
             />
-            <SkillsItemContent className={skillsItem2 ? classes.skills__open : classes.skills__close}>
+            <SkillsItemContent
+              className={
+                skillsItem2 ? classes.skills__open : classes.skills__close
+              }
+            >
               <SkillsItemElement
                 name="Node.js"
                 number="50%"
@@ -107,12 +123,20 @@ const Skills = () => {
           <SkillsItem>
             <SkillsItemHeader
               toggleItem={toggleSkillsItem3}
-              className={skillsItem3 ? classes.skills__icon_open : classes.skills__icon_close}
+              className={
+                skillsItem3
+                  ? classes.skills__icon_open
+                  : classes.skills__icon_close
+              }
               title="Designer"
               subtitle="More than 5 years"
               icon={<UilSwatchbook size={myIconSizes.big} />}
             />
-            <SkillsItemContent className={skillsItem3 ? classes.skills__open : classes.skills__close}>
+            <SkillsItemContent
+              className={
+                skillsItem3 ? classes.skills__open : classes.skills__close
+              }
+            >
               <SkillsItemElement
                 name="Figma"
                 number="85%"
@@ -134,6 +158,6 @@ const Skills = () => {
       </div>
     </Section>
   );
-};
+}
 
 export default Skills;

@@ -1,4 +1,5 @@
-import { useStyles } from './Button.style'
+import React from 'react';
+import { useStyles } from './Button.style';
 
 type ButtonLinkProps = {
   href: string | undefined;
@@ -8,11 +9,16 @@ type ButtonLinkProps = {
   children?: React.ReactElement | Array<React.ReactElement>;
 };
 
-const ButtonLink = ({ href, className, target, download, children }: ButtonLinkProps) => {
-  
-  const classes = useStyles()
+function ButtonLink({
+  href,
+  className,
+  target,
+  download,
+  children
+}: ButtonLinkProps) {
+  const classes = useStyles();
 
-  const rel = target ? "noreferrer noopener" : "";
+  const rel = target ? 'noreferrer noopener' : '';
 
   return (
     <a
@@ -25,6 +31,6 @@ const ButtonLink = ({ href, className, target, download, children }: ButtonLinkP
       {children}
     </a>
   );
-};
+}
 
 export default ButtonLink;

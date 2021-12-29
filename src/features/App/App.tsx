@@ -1,14 +1,15 @@
+import React from 'react';
 import Header from '../../containers/Header/Header';
 import Main from '../../containers/Main/Main';
 
-import { useStyles } from './App.style'
+import useStyles from './App.style';
 
-const App = () => {
-  useStyles()
+function App() {
+  useStyles();
   return (
     <>
       <Header />
-      <Main /> 
+      <Main />
       {/* <Footer /> */}
     </>
   );
