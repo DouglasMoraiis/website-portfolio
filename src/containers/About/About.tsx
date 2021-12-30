@@ -9,7 +9,7 @@ import { useStyles } from './About.style';
 function About() {
   const classes = useStyles();
   return (
-    <Section id="about" className={` ${classes.about} container`}>
+    <Section id="about" className={`${classes.about} container`}>
       <header>
         <h2>About Me</h2>
         <span>My Introduction</span>

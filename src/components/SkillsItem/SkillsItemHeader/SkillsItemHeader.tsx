@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
 
 import { UilBracketsCurly, UilAngleDown } from '@iconscout/react-unicons';
@@ -22,7 +23,7 @@ function SkillsItemHeader({
 }: SkillsItemHeaderProps) {
   const classes = useStyles();
   return (
-    <switch
+    <div
       onKeyPress={toggleItem}
       className={`${classes.skills__header} ${className}`}
       onClick={toggleItem}
@@ -33,7 +34,7 @@ function SkillsItemHeader({
         <span className={classes.skills__subtitle}>{subtitle}</span>
       </div>
       <UilAngleDown size={myIconSizes.big} />
-    </switch>
+    </div>
   );
 }
 

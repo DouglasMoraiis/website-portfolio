@@ -9,6 +9,7 @@ import {
 } from '../../theme';
 
 export const useStyles = makeStyles({
+  skills: {},
   skills__container: {
     rowGap: 0
   },

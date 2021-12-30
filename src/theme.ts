@@ -66,5 +66,5 @@ export const myIconSizes = {
   big: '28',
   normal: '24',
   small: '20',
-  smaller: '16'
+  smaller: '14'
 };
