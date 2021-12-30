@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+
 import { UilBracketsCurly, UilAngleDown } from '@iconscout/react-unicons';
-import { useStyles } from './SkillsItem.style';
+
 import { myIconSizes } from '../../theme';
+import { useStyles } from './SkillsItem.style';
 
 type SkillsItemProps = {
   children: React.ReactElement | Array<React.ReactElement>;

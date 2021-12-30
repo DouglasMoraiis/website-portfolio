@@ -1,11 +1,10 @@
 import { UilFileDownloadAlt } from '@iconscout/react-unicons';
-import Section from '../../components/Section/Section';
-import Button from '../../components/Button/Button';
-import { useStyles } from './About.style';
-import { myIconSizes } from '../../theme';
 
 import aboutImg from '../../assets/img/about.jpg';
 import cvPDF from '../../assets/pdf/Alexa-Cv.pdf';
+import { Button, Section } from '../../components';
+import { myIconSizes } from '../../theme';
+import { useStyles } from './About.style';
 
 function About() {
   const classes = useStyles();

@@ -7,13 +7,8 @@ import {
   UilArrowDown
 } from '@iconscout/react-unicons';
 
-import { SdCardSharp } from '@material-ui/icons';
-import ButtonLink from '../../components/ButtonLink/ButtonLink';
-import Button from '../../components/Button/Button';
-import Section from '../../components/Section/Section';
-import SvgBlob from '../../components/SvgBlob/SvgBlob';
-
 import PerfilImg from '../../assets/img/perfil.png';
+import { Button, ButtonLink, Section, SvgBlob } from '../../components';
 import { myIconSizes } from '../../theme';
 import { useStyles } from './Home.style';
 

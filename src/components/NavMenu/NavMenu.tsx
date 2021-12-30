@@ -10,8 +10,9 @@ import {
   UilTimes,
   UilApps
 } from '@iconscout/react-unicons';
-import { useStyles } from './NavMenu.style';
+
 import { myIconSizes } from '../../theme';
+import { useStyles } from './NavMenu.style';
 
 function NavMenu() {
   const classes = useStyles();

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { useStyles } from './Button.style';
 
 type ButtonLinkProps = {
@@ -9,7 +10,7 @@ type ButtonLinkProps = {
   children?: React.ReactElement | Array<React.ReactElement>;
 };
 
-function ButtonLink({
+function Button({
   href,
   className,
   target,
@@ -33,4 +34,4 @@ function ButtonLink({
   );
 }
 
-export default ButtonLink;
+export default Button;

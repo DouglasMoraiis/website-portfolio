@@ -1,9 +1,14 @@
+import { UilGraduationCap, UilBriefcaseAlt } from '@iconscout/react-unicons';
+
 import {
-  UilGraduationCap,
-  UilBriefcaseAlt,
-  UilCalendarAlt
-} from '@iconscout/react-unicons';
-import Section from '../../components/Section/Section';
+  Section,
+  Roadmap,
+  RoadmapNav,
+  RoadmapNavButton,
+  RoadmapContent,
+  RoadmapGroup,
+  RoadmapItem
+} from '../../components';
 import { useStyles } from './Qualification.style';
 
 function Qualification() {
@@ -16,43 +21,40 @@ function Qualification() {
         <span>My Introduction</span>
       </header>
 
-      <div className={`${classes.qualification__container} container`}>
-        <div className={classes.qualification_tabs}>
-          <div className={`${classes.qualification__button} button-flex`}>
-            <UilGraduationCap />
-            Education
-          </div>
+      <Roadmap>
+        <RoadmapNav>
+          <RoadmapNavButton title="Education" icon={<UilGraduationCap />} />
+          <RoadmapNavButton title="Work" icon={<UilBriefcaseAlt />} />
+        </RoadmapNav>
 
-          <div className={`${classes.qualification__button} button-flex`}>
-            <UilBriefcaseAlt />
-            Work
-          </div>
-        </div>
+        <RoadmapContent>
+          <RoadmapGroup id="education">
+            <RoadmapItem
+              title="Graduando em Ciência da Computação"
+              subtitle="UFC - Campus Russas"
+              calendar="2018 - 2022"
+            />
+            <RoadmapItem
+              title="Graduando em Ciência da Computação"
+              subtitle="UFC - Campus Russas"
+              calendar="2018 - 2022"
+            />
+          </RoadmapGroup>
 
-        <div className={classes.qualification__sections}>
-          <div className={classes.qualification__content}>
-            <div className={classes.qualification__data}>
-              <div>
-                <h3 className={classes.qualification__title}>
-                  Graduando em Ciência da Computação
-                </h3>
-                <span className={classes.qualification__subtitle}>
-                  UFC - Campus Russas
-                </span>
-                <div className={classes.qualification__calendar}>
-                  <UilCalendarAlt />
-                  2018 - 2022
-                </div>
-              </div>
-
-              <div>
-                <span className={qualification__rounder} />
-                <span className={qualification__line} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          <RoadmapGroup id="work">
+            <RoadmapItem
+              title="Graduando em Ciência da Computação"
+              subtitle="UFC - Campus Russas"
+              calendar="2018 - 2022"
+            />
+            <RoadmapItem
+              title="Graduando em Ciência da Computação"
+              subtitle="UFC - Campus Russas"
+              calendar="2018 - 2022"
+            />
+          </RoadmapGroup>
+        </RoadmapContent>
+      </Roadmap>
     </Section>
   );
 }

@@ -5,16 +5,17 @@ import {
   UilServerNetwork,
   UilSwatchbook
 } from '@iconscout/react-unicons';
-import Section from '../../components/Section/Section';
-/* import Button from '../../components/Button/Button'; */
 
-import SkillsItem from '../../components/SkillsItem/SkillsItem';
-import SkillsItemHeader from '../../components/SkillsItem/SkillsItemHeader/SkillsItemHeader';
-import SkillsItemContent from '../../components/SkillsItem/SkillsItemContent/SkillsItemContent';
-import SkillsItemElement from '../../components/SkillsItem/SkillsItemElement/SkillsItemElement';
-
-import { useStyles } from './Skills.style';
+import {
+  Button,
+  Section,
+  SkillsItem,
+  SkillsItemContent,
+  SkillsItemElement,
+  SkillsItemHeader
+} from '../../components';
 import { myIconSizes } from '../../theme';
+import { useStyles } from './Skills.style';
 
 function Skills() {
   const classes = useStyles();

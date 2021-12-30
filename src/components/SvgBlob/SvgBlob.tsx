@@ -4,7 +4,7 @@ type SvgBlobProps = {
   hrefTagImage?: string;
 };
 
-const SvgBlob = ({ classBlob, classImage, hrefTagImage }: SvgBlobProps) => {
+function SvgBlob({ classBlob, classImage, hrefTagImage }: SvgBlobProps) {
   return (
     <svg
       className={classBlob}
@@ -26,10 +26,10 @@ const SvgBlob = ({ classBlob, classImage, hrefTagImage }: SvgBlobProps) => {
             129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
             -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
         />
-        <image className={classImage} href={hrefTagImage} x="12" y="18"/>
+        <image className={classImage} href={hrefTagImage} x="12" y="18" />
       </g>
     </svg>
   );
-};
+}
 
 export default SvgBlob;

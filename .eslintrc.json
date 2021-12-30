@@ -17,7 +17,7 @@
       "ecmaVersion": 12,
       "sourceType": "module"
     },
-    "plugins": ["react", "@typescript-eslint", "prettier"],
+    "plugins": ["react", "@typescript-eslint", "prettier", "import-helpers" ],
     "settings": {
       "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
       "import/parsers": {
@@ -60,6 +60,19 @@
             "onKeyUp"
           ]
         }
-      ]
+      ],
+      "import-helpers/order-imports": [
+        "warn",
+        {
+            "newlinesBetween": "always",
+            "groups": [
+                "/^react/",
+                "module",
+                "/^@shared/",
+                ["parent", "sibling", "index"]
+            ],
+            "alphabetize": { "order": "asc", "ignoreCase": true }
+        }
+    ]
     }
   }

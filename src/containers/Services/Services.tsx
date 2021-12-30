@@ -7,8 +7,7 @@ import {
   UilArrowDown
 } from '@iconscout/react-unicons';
 
-import Section from '../../components/Section/Section';
-
+import { Section } from '../../components';
 import { useStyles } from './Services.style';
 
 function Services() {
