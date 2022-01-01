@@ -1,8 +1,12 @@
-import About from '../About/About';
-import Home from '../Home/Home';
-import Qualification from '../Qualification/Qualification';
-import Services from '../Services/Services';
-import Skills from '../Skills/Skills';
+import {
+  About,
+  Home,
+  Qualification,
+  Services,
+  Portfolio,
+  Contact,
+  Skills
+} from '../../features';
 import { useStyles } from './Main.style';
 
 function Main() {

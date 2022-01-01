@@ -1,33 +1,15 @@
-import Button from './Button/Button';
-import ButtonLink from './ButtonLink/ButtonLink';
-import NavMenu from './NavMenu/NavMenu';
-import Roadmap from './Roadmap/Roadmap';
-import RoadmapContent from './Roadmap/RoadmapContent/RoadmapContent';
-import RoadmapGroup from './Roadmap/RoadmapGroup/RoadmapGroup';
-import RoadmapItem from './Roadmap/RoadmapItem/RoadmapItem';
-import RoadmapNav from './Roadmap/RoadmapNav/RoadmapNav';
-import RoadmapNavButton from './Roadmap/RoadmapNavButton/RoadmapNavButton';
-import Section from './Section/Section';
-import SkillsItem from './SkillsItem/SkillsItem';
-import SkillsItemContent from './SkillsItem/SkillsItemContent/SkillsItemContent';
-import SkillsItemElement from './SkillsItem/SkillsItemElement/SkillsItemElement';
-import SkillsItemHeader from './SkillsItem/SkillsItemHeader/SkillsItemHeader';
-import SvgBlob from './SvgBlob/SvgBlob';
-
-export {
-  Button,
-  ButtonLink,
-  NavMenu,
-  Roadmap,
-  RoadmapContent,
-  RoadmapGroup,
-  RoadmapItem,
-  RoadmapNav,
-  RoadmapNavButton,
-  Section,
-  SkillsItem,
-  SkillsItemContent,
-  SkillsItemElement,
-  SkillsItemHeader,
-  SvgBlob
-};
+export { default as Button } from './Button/Button';
+export { default as ButtonLink } from './ButtonLink/ButtonLink';
+export { default as NavMenu } from './NavMenu/NavMenu';
+export { default as Roadmap } from './Roadmap/Roadmap';
+export { default as RoadmapContent } from './Roadmap/RoadmapContent/RoadmapContent';
+export { default as RoadmapGroup } from './Roadmap/RoadmapGroup/RoadmapGroup';
+export { default as RoadmapItem } from './Roadmap/RoadmapItem/RoadmapItem';
+export { default as RoadmapNav } from './Roadmap/RoadmapNav/RoadmapNav';
+export { default as RoadmapNavButton } from './Roadmap/RoadmapNavButton/RoadmapNavButton';
+export { default as Section } from './Section/Section';
+export { default as SkillsItem } from './SkillsItem/SkillsItem';
+export { default as SkillsItemContent } from './SkillsItem/SkillsItemContent/SkillsItemContent';
+export { default as SkillsItemElement } from './SkillsItem/SkillsItemElement/SkillsItemElement';
+export { default as SkillsItemHeader } from './SkillsItem/SkillsItemHeader/SkillsItemHeader';
+export { default as SvgBlob } from './SvgBlob/SvgBlob';
