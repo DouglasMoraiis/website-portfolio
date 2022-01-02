@@ -3,14 +3,17 @@ import React, { useState } from 'react';
 import { UilBracketsCurly, UilAngleDown } from '@iconscout/react-unicons';
 
 import { myIconSizes } from '../../../theme';
-import { useStyles } from '../SkillsItem.style';
+import { useStyles } from '../DropdownSkills.style';
 
-type SkillsItemContentProps = {
+type DropdownSkillsContentProps = {
   className?: string;
   children: Array<React.ReactElement> | React.ReactElement;
 };
 
-function SkillsItemContent({ className, children }: SkillsItemContentProps) {
+function DropdownSkillsContent({
+  className,
+  children
+}: DropdownSkillsContentProps) {
   const classes = useStyles();
   return (
     <div className={`${classes.skills__content} ${className}`}>
@@ -19,4 +22,4 @@ function SkillsItemContent({ className, children }: SkillsItemContentProps) {
   );
 }
 
-export default SkillsItemContent;
+export default DropdownSkillsContent;

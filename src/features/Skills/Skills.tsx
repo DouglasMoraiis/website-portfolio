@@ -7,12 +7,11 @@ import {
 } from '@iconscout/react-unicons';
 
 import {
-  Button,
   Section,
-  SkillsItem,
-  SkillsItemContent,
-  SkillsItemElement,
-  SkillsItemHeader
+  DropdownSkills,
+  DropdownSkillsHeader,
+  DropdownSkillsContent,
+  DropdownSkillsItem
 } from '../../components';
 import { myIconSizes } from '../../theme';
 import { useStyles } from './Skills.style';
@@ -50,8 +49,8 @@ function Skills() {
       </header>
       <div className={`${classes.skills__container} grid container`}>
         <div>
-          <SkillsItem>
-            <SkillsItemHeader
+          <DropdownSkills>
+            <DropdownSkillsHeader
               toggleItem={toggleSkillsItem1}
               className={
                 skillsItem1
@@ -63,31 +62,31 @@ function Skills() {
               icon={<UilBracketsCurly size={myIconSizes.big} />}
             />
 
-            <SkillsItemContent
+            <DropdownSkillsContent
               className={
                 skillsItem1 ? classes.skills__open : classes.skills__close
               }
             >
-              <SkillsItemElement
+              <DropdownSkillsItem
                 name="HTML"
                 number="85%"
                 classNameBar={classes.skills__html}
               />
-              <SkillsItemElement
+              <DropdownSkillsItem
                 name="CSS"
                 number="90%"
                 classNameBar={classes.skills__css}
               />
-              <SkillsItemElement
+              <DropdownSkillsItem
                 name="JavaScript"
                 number="80%"
                 classNameBar={classes.skills__js}
               />
-            </SkillsItemContent>
-          </SkillsItem>
+            </DropdownSkillsContent>
+          </DropdownSkills>
 
-          <SkillsItem>
-            <SkillsItemHeader
+          <DropdownSkills>
+            <DropdownSkillsHeader
               toggleItem={toggleSkillsItem2}
               className={
                 skillsItem2
@@ -98,31 +97,31 @@ function Skills() {
               subtitle="More than 2 years"
               icon={<UilServerNetwork size={myIconSizes.big} />}
             />
-            <SkillsItemContent
+            <DropdownSkillsContent
               className={
                 skillsItem2 ? classes.skills__open : classes.skills__close
               }
             >
-              <SkillsItemElement
+              <DropdownSkillsItem
                 name="Node.js"
                 number="50%"
                 classNameBar={classes.skills__node}
               />
-              <SkillsItemElement
+              <DropdownSkillsItem
                 name="MongoDB"
                 number="70%"
                 classNameBar={classes.skills__mongo}
               />
-              <SkillsItemElement
+              <DropdownSkillsItem
                 name="PostgreSQL"
                 number="40%"
                 classNameBar={classes.skills__postgreSQL}
               />
-            </SkillsItemContent>
-          </SkillsItem>
+            </DropdownSkillsContent>
+          </DropdownSkills>
 
-          <SkillsItem>
-            <SkillsItemHeader
+          <DropdownSkills>
+            <DropdownSkillsHeader
               toggleItem={toggleSkillsItem3}
               className={
                 skillsItem3
@@ -133,28 +132,28 @@ function Skills() {
               subtitle="More than 5 years"
               icon={<UilSwatchbook size={myIconSizes.big} />}
             />
-            <SkillsItemContent
+            <DropdownSkillsContent
               className={
                 skillsItem3 ? classes.skills__open : classes.skills__close
               }
             >
-              <SkillsItemElement
+              <DropdownSkillsItem
                 name="Figma"
                 number="85%"
                 classNameBar={classes.skills__figma}
               />
-              <SkillsItemElement
+              <DropdownSkillsItem
                 name="Illustrator"
                 number="95%"
                 classNameBar={classes.skills__illustrator}
               />
-              <SkillsItemElement
+              <DropdownSkillsItem
                 name="Photoshop"
                 number="90%"
                 classNameBar={classes.skills__photoshop}
               />
-            </SkillsItemContent>
-          </SkillsItem>
+            </DropdownSkillsContent>
+          </DropdownSkills>
         </div>
       </div>
     </Section>

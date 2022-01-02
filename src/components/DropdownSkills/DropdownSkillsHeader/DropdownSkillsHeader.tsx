@@ -4,9 +4,9 @@ import React from 'react';
 import { UilBracketsCurly, UilAngleDown } from '@iconscout/react-unicons';
 
 import { myIconSizes } from '../../../theme';
-import { useStyles } from '../SkillsItem.style';
+import { useStyles } from '../DropdownSkills.style';
 
-type SkillsItemHeaderProps = {
+type DropdownSkillsHeaderProps = {
   title: string;
   subtitle: string;
   icon: React.ReactElement;
@@ -14,13 +14,13 @@ type SkillsItemHeaderProps = {
   toggleItem: () => void;
 };
 
-function SkillsItemHeader({
+function DropdownSkillsHeader({
   title,
   subtitle,
   icon,
   className,
   toggleItem
-}: SkillsItemHeaderProps) {
+}: DropdownSkillsHeaderProps) {
   const classes = useStyles();
   return (
     <div
@@ -38,4 +38,4 @@ function SkillsItemHeader({
   );
 }
 
-export default SkillsItemHeader;
+export default DropdownSkillsHeader;

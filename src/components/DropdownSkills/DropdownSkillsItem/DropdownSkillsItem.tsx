@@ -1,19 +1,19 @@
 import { UilBracketsCurly, UilAngleDown } from '@iconscout/react-unicons';
 
 import { myIconSizes } from '../../../theme';
-import { useStyles } from '../SkillsItem.style';
+import { useStyles } from '../DropdownSkills.style';
 
-type SkillsItemElementProps = {
+type DropdownSkillsItemProps = {
   name: string;
   number: string;
   classNameBar?: string;
 };
 
-function SkillsItemElement({
+function DropdownSkillsItem({
   name,
   number,
   classNameBar
-}: SkillsItemElementProps) {
+}: DropdownSkillsItemProps) {
   const classes = useStyles();
   return (
     <div className={classes.skills__data}>
@@ -28,4 +28,4 @@ function SkillsItemElement({
   );
 }
 
-export default SkillsItemElement;
+export default DropdownSkillsItem;
