@@ -13,3 +13,5 @@ export { default as DropdownSkillsContent } from './DropdownSkills/DropdownSkill
 export { default as DropdownSkillsItem } from './DropdownSkills/DropdownSkillsItem/DropdownSkillsItem';
 export { default as DropdownSkillsHeader } from './DropdownSkills/DropdownSkillsHeader/DropdownSkillsHeader';
 export { default as SvgBlob } from './SvgBlob/SvgBlob';
+export { default as Card } from './Card/Card';
+export { default as Modal } from './Modal/Modal';
