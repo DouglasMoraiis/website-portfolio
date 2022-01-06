@@ -10,10 +10,11 @@ type CardProps = {
 
 function Card({ title, iconTitle, children }: CardProps) {
   const classes = useStyles();
+
   return (
-    <div className={`${classes.container} container grid`}>
-      <h4>{title}</h4>
-      {iconTitle}
+    <div className={classes.content}>
+      <span className={classes.icon}>{iconTitle}</span>
+      <h3 className={classes.title}>{title}</h3>
       {children}
     </div>
   );
