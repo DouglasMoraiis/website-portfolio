@@ -17,7 +17,11 @@ const useStyles = makeStyles({
     body: {
       height: '100%',
       width: '100%',
-      margin: `0 0 ${myHeights.header} 0`
+      margin: `0 0 ${myHeights.header} 0`,
+      fontFamily: myFonts.bodyFont,
+      fontSize: myFonts.fontSize.normal,
+      background: myColors.bodyColor,
+      color: myColors.textColor
     },
     'h1, h2, h3, h4': {
       color: myColors.titleColor,
