@@ -18,31 +18,19 @@ const { REACT_APP_LINKEDIN, REACT_APP_GITHUB, REACT_APP_INSTAGRAM } =
 function Home() {
   const classes = useStyles();
   return (
-    <Section id="home" className={`${classes.home}`}>
+    <Section id="home" className={`${classes.home} container`}>
       <div className={`${classes.home__container} container grid`}>
         <div className={`${classes.home__content} grid`}>
           <div className={`${classes.home__social}`}>
-            <ButtonLink
-              href={REACT_APP_LINKEDIN}
-              className={classes.home__social_icon}
-              target="_blank"
-            >
+            <ButtonLink href={REACT_APP_LINKEDIN} target="_blank">
               <UilLinkedinAlt size={myIconSizes.normal} />
             </ButtonLink>
 
-            <ButtonLink
-              href={REACT_APP_GITHUB}
-              className={classes.home__social_icon}
-              target="_blank"
-            >
+            <ButtonLink href={REACT_APP_GITHUB} target="_blank">
               <UilGithubAlt size={myIconSizes.normal} />
             </ButtonLink>
 
-            <ButtonLink
-              href={REACT_APP_INSTAGRAM}
-              className={classes.home__social_icon}
-              target="_blank"
-            >
+            <ButtonLink href={REACT_APP_INSTAGRAM} target="_blank">
               <UilInstagram size={myIconSizes.normal} />
             </ButtonLink>
           </div>

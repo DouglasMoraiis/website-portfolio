@@ -17,13 +17,6 @@ export const useStyles = makeStyles({
     gridTemplateColumns: 'max-content',
     rowGap: '1.25rem'
   },
-  home__social_icon: {
-    color: myColors.firstColor,
-
-    '&:hover': {
-      color: myColors.firstColorAlt
-    }
-  },
   home__img: {
     display: 'flex',
     alignItems: 'center',
