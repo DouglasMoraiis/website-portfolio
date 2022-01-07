@@ -22,7 +22,7 @@ export const useStyles = makeStyles({
   },
   services__button: {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'start',
     transition: '.3s',
     '& svg': {
       transition: '.3s'

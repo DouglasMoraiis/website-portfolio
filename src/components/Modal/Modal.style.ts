@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 
-import { myColors, myZIndex } from '../../theme';
+import { myColors, myFonts, myMarginBottom, myZIndex } from '../../theme';
 
 export const useStyles = makeStyles({
   container: {
@@ -27,7 +27,7 @@ export const useStyles = makeStyles({
     '& a': {
       display: 'flex',
       cursor: 'pointer',
-      transition: '.3s',
+      transition: '.2s',
       alignItems: 'center',
       '&:hover': {
         color: myColors.firstColor
@@ -39,6 +39,9 @@ export const useStyles = makeStyles({
     justifyContent: 'space-between',
     padding: 0,
     margin: 0,
+    fontSize: myFonts.fontSize.h3,
+    fontWeight: myFonts.fontWeight.medium,
+    marginBottom: myMarginBottom.mb1_5,
     '& h4': {
       paddingTop: '.1rem'
     }

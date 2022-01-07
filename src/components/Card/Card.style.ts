@@ -6,7 +6,7 @@ export const useStyles = makeStyles({
   content: {
     position: 'relative',
     background: myColors.containerColor,
-    padding: '2rem 1.5rem 1.5rem 1.5rem',
+    padding: '2.5rem 2rem 1.75rem 1.5rem',
     borderRadius: '.25rem',
     boxShadow: '0 2px 4px rgba(0, 0, 0, .15)',
     transition: '.3s',

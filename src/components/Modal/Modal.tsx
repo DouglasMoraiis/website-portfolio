@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { UilTimes } from '@iconscout/react-unicons';
 
 import { useStyles } from './Modal.style';
+import { myIconSizes } from '../../theme';
 
 type ModalProps = {
   title: string;
@@ -24,7 +25,7 @@ function Modal({ title, status, disable, children }: ModalProps) {
         <div className={classes.title}>
           <h4>{title}</h4>
           <a onClick={disable}>
-            <UilTimes />
+            <UilTimes size={myIconSizes.big} />
           </a>
         </div>
         {children}
