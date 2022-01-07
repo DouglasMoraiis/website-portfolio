@@ -56,7 +56,7 @@ function Services() {
 
       <div className={`${classes.services__container} container grid`}>
         <Card
-          title="Ui/Ux Designer"
+          title="UI/UX Designer"
           iconTitle={<UilWebGrid size={myIconSizes.big} />}
         >
           <span className={classes.services__button}>

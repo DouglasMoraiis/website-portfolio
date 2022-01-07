@@ -25,12 +25,23 @@ export const useStyles = makeStyles({
     padding: '1.5rem',
     borderRadius: '.5rem',
     '& a': {
-      cursor: 'pointer'
+      display: 'flex',
+      cursor: 'pointer',
+      transition: '.3s',
+      alignItems: 'center',
+      '&:hover': {
+        color: myColors.firstColor
+      }
     }
   },
   title: {
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    padding: 0,
+    margin: 0,
+    '& h4': {
+      paddingTop: '.1rem'
+    }
   },
   active: {
     transition: '.3s',
