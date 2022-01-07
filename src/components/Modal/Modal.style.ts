@@ -12,7 +12,7 @@ export const useStyles = makeStyles({
     left: 0,
     right: 0,
     bottom: 0,
-    background: 'rgba(0,0,0,.5)',
+    background: 'rgba(0,0,0,.6)',
     zIndex: myZIndex.zModal,
     padding: '0 1rem',
     opacity: 0,
@@ -23,6 +23,8 @@ export const useStyles = makeStyles({
     position: 'relative',
     background: myColors.containerColor,
     padding: '1.5rem',
+    boxShadow:
+      'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px',
     borderRadius: '.5rem',
     '& a': {
       display: 'flex',
