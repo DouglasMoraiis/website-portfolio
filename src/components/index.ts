@@ -15,3 +15,5 @@ export { default as DropdownSkillsHeader } from './DropdownSkills/DropdownSkills
 export { default as SvgBlob } from './SvgBlob/SvgBlob';
 export { default as Card } from './Card/Card';
 export { default as Modal } from './Modal/Modal';
+export { default as Carrossel } from './Carrossel/Carrossel';
+export { default as CarrosselItem } from './Carrossel/CarrosselItem/CarrosselItem';
