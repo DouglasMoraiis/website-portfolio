@@ -8,21 +8,25 @@ import { useStyles } from './CarrosselItem.style';
 
 type CarrosselItemProps = {
   id: string;
+  img: string;
   title: string;
   description: string;
 };
 
-function CarrosselItem({ id, title, description }: CarrosselItemProps) {
+function CarrosselItem({ id, img, title, description }: CarrosselItemProps) {
   const classes = useStyles();
 
   return (
-    <div id={id} className={classes.content}>
-      <h3 className={classes.title}>{title}</h3>
-      <p className={classes.description}>{description}</p>
-      <Button href="#">
-        <span>Demo</span>
-        <UilArrowRight size={myIconSizes.small} />
-      </Button>
+    <div className={classes.container}>
+      <img src={img} alt={title} />
+      <div id={id} className={classes.content}>
+        <h3 className={classes.title}>{title}</h3>
+        <p className={classes.description}>{description}</p>
+        <Button href="#">
+          <span>Demo</span>
+          <UilArrowRight size={myIconSizes.small} />
+        </Button>
+      </div>
     </div>
   );
 }

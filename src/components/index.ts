@@ -16,4 +16,5 @@ export { default as SvgBlob } from './SvgBlob/SvgBlob';
 export { default as Card } from './Card/Card';
 export { default as Modal } from './Modal/Modal';
 export { default as Carrossel } from './Carrossel/Carrossel';
+// eslint-disable-next-line import/no-cycle
 export { default as CarrosselItem } from './Carrossel/CarrosselItem/CarrosselItem';
