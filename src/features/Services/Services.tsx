@@ -54,11 +54,6 @@ function Services() {
       subtitle="What i offer"
       className={classes.services}
     >
-      <header>
-        <h2>Services</h2>
-        <span>What i offer</span>
-      </header>
-
       <div className={`${classes.services__container} container grid`}>
         <Card
           title="UI/UX Designer"

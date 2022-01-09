@@ -36,10 +36,6 @@ function Qualification() {
       subtitle="My personal journey"
       className={classes.qualification}
     >
-      <header>
-        <h2>Qualification</h2>
-        <span>My personal journey</span>
-      </header>
       <Roadmap>
         <RoadmapNav>
           <RoadmapNavButton

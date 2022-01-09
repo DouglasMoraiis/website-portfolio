@@ -15,7 +15,7 @@ function Portfolio() {
 
   return (
     <Section
-      id="portifolio"
+      id="portfolio"
       title="Portfolio"
       subtitle="My recents works"
       className={classes.portfolio}

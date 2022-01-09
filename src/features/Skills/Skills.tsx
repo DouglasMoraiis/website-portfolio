@@ -48,10 +48,6 @@ function Skills() {
       subtitle="My Technical level"
       className={classes.skills}
     >
-      <header>
-        <h2>Skills</h2>
-        <span>My Technical level</span>
-      </header>
       <div className={`${classes.skills__container} grid container`}>
         <div>
           <DropdownSkills>
