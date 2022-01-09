@@ -17,8 +17,8 @@ function Main() {
       {/* <About /> */}
       {/* <Skills /> */}
       {/* <Qualification /> */}
-      <Services />
-      {/* <Portfolio /> */}
+      {/* <Services /> */}
+      <Portfolio />
       {/* <Contact /> */}
     </main>
   );

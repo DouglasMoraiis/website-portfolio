@@ -17,8 +17,8 @@ function CarrosselItem({ id, img, title, description }: CarrosselItemProps) {
   const classes = useStyles();
 
   return (
-    <div className={classes.container}>
-      <img src={img} alt={title} />
+    <div className={`${classes.content} grid`}>
+      <img src={img} className={classes.img} alt={title} />
       <div id={id} className={classes.content}>
         <h3 className={classes.title}>{title}</h3>
         <p className={classes.description}>{description}</p>

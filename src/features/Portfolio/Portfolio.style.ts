@@ -1,46 +1,18 @@
 import { makeStyles } from '@material-ui/core';
 
-import {
-  myColors,
-  myFonts,
-  myHeights,
-  myMarginBottom,
-  myZIndex
-} from '../../theme';
-
 export const useStyles = makeStyles({
-  about: {},
-  about__container: {},
-  about__img: {
-    width: '300px',
-    borderRadius: '.5rem',
-    justifySelf: 'center',
-    alignSelf: 'center'
+  portfolio: {},
+  portifolio__container: {},
+  '@global div.swiper-button-next::after, div.swiper-button-prev::after': {
+    fontSize: '2rem',
+    fontWeight: 600
   },
-  about__data: {},
-  about__description: {
-    textAlign: 'center',
-    marginBottom: myMarginBottom.mb2_5
+  '@global div.swiper-button-prev': {
+    left: '-.4rem',
+    paddingLeft: '1.2rem'
   },
-  about__info: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    marginBottom: myMarginBottom.mb2_5
-  },
-  about__info_title: {
-    display: 'block',
-    textAlign: 'center',
-    fontSize: myFonts.fontSize.h2,
-    fontWeight: myFonts.fontWeight.semiBold
-  },
-  about__info_name: {
-    display: 'block',
-    textAlign: 'center',
-    fontSize: myFonts.fontSize.smaller
-  },
-  about__buttons: {
-    display: 'flex',
-    justifyContent: 'center'
+  '@global div.swiper-button-next': {
+    right: '-.4rem',
+    paddingRight: '1.2rem'
   }
 });

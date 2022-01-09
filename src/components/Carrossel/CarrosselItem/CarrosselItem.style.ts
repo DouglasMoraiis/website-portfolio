@@ -5,19 +5,31 @@ import { myColors, myFonts, myMarginBottom } from '../../../theme';
 export const useStyles = makeStyles({
   container: {},
   content: {
-    position: 'relative',
-    background: myColors.containerColor,
-    padding: '2.5rem 2rem 1.75rem 1.5rem',
-    borderRadius: '.25rem',
-    boxShadow: '0 2px 4px rgba(0, 0, 0, .15)',
+    padding: '0 1.75rem 1.5rem 1.75rem',
     transition: '.3s',
-    '&:hover': {
-      boxShadow: '0 4px 8px rgba(0, 0, 0, .15)'
+    '& a': {
+      '& svg': {
+        transition: '.3s',
+        transform: 'translateX(0)'
+      }
     },
-    '& h4': {
-      wordWrap: true
+    '& a:hover': {
+      '& svg': {
+        transition: '.3s',
+        transform: 'translateX(.25rem)'
+      }
     }
   },
-  title: {},
-  description: {}
+  img: {
+    width: '265px',
+    borderRadius: '.5rem',
+    justifySelf: 'center'
+  },
+  title: {
+    fontSize: myFonts.fontSize.h3,
+    marginBottom: myMarginBottom.mb0_5
+  },
+  description: {
+    marginBottom: myMarginBottom.mb0_75
+  }
 });

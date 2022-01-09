@@ -1,4 +1,4 @@
-const hueColor = '240';
+const hueColor = '150';
 
 export const myHeights = {
   header: '3rem'

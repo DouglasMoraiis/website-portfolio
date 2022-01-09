@@ -4,6 +4,9 @@ import { myFonts, myHeights, myColors, myMarginBottom } from '../../theme';
 
 const useStyles = makeStyles({
   '@global': {
+    ':root': {
+      '--swiper-theme-color': myColors.firstColor
+    },
     '*, *::before, *::after': {
       boxSizing: 'inherit'
     },

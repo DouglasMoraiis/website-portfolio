@@ -11,7 +11,7 @@ function Carrossel({ id, children }: CarrosselProps) {
   const classes = useStyles();
 
   return (
-    <div id={id} className={classes.content}>
+    <div id={id} className={`${classes.container} container`}>
       {children}
     </div>
   );
