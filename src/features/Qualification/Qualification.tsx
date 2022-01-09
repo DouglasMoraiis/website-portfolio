@@ -32,7 +32,9 @@ function Qualification() {
   return (
     <Section
       id="qualification"
-      className={`${classes.qualification} container`}
+      title="Qualification"
+      subtitle="My personal journey"
+      className={classes.qualification}
     >
       <header>
         <h2>Qualification</h2>

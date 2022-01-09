@@ -13,11 +13,11 @@ function Main() {
   const classes = useStyles();
   return (
     <main className={classes.main}>
-      {/* <Home /> */}
-      {/* <About /> */}
-      {/* <Skills /> */}
-      {/* <Qualification /> */}
-      {/* <Services /> */}
+      <Home />
+      <About />
+      <Skills />
+      <Qualification />
+      <Services />
       <Portfolio />
       {/* <Contact /> */}
     </main>

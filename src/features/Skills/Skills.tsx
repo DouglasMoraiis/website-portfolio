@@ -42,7 +42,12 @@ function Skills() {
   };
 
   return (
-    <Section id="skills" className={`${classes.skills} container`}>
+    <Section
+      id="skills"
+      title="Skills"
+      subtitle="My Technical level"
+      className={classes.skills}
+    >
       <header>
         <h2>Skills</h2>
         <span>My Technical level</span>

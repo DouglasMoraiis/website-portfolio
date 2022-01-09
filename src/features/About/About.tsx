@@ -9,11 +9,12 @@ import { useStyles } from './About.style';
 function About() {
   const classes = useStyles();
   return (
-    <Section id="about" className={`${classes.about} container`}>
-      <header>
-        <h2>About Me</h2>
-        <span>My Introduction</span>
-      </header>
+    <Section
+      id="about"
+      title="About Me"
+      subtitle="My Introduction"
+      className={classes.about}
+    >
       <div className={`${classes.about__container} grid container`}>
         <img
           src={aboutImg}

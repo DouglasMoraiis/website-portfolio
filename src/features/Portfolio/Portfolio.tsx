@@ -14,12 +14,12 @@ function Portfolio() {
   useStyles();
 
   return (
-    <Section id="portifolio" className={`${classes.portfolio} container`}>
-      <header>
-        <h2>Portfolio</h2>
-        <span>My recents works</span>
-      </header>
-
+    <Section
+      id="portifolio"
+      title="Portfolio"
+      subtitle="My recents works"
+      className={classes.portfolio}
+    >
       <Carrossel id="carrossel">
         <SwiperSlide>
           <CarrosselItem

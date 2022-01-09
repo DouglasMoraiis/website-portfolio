@@ -48,7 +48,12 @@ function Services() {
   };
 
   return (
-    <Section id="services" className={`${classes.services} container`}>
+    <Section
+      id="services"
+      title="Services"
+      subtitle="What i offer"
+      className={classes.services}
+    >
       <header>
         <h2>Services</h2>
         <span>What i offer</span>
