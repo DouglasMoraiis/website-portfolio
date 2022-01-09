@@ -3,9 +3,9 @@ import { makeStyles } from '@material-ui/core';
 import { myColors, myFonts, myMarginBottom } from '../../../theme';
 
 export const useStyles = makeStyles({
-  container: {},
   content: {
-    padding: '0 1.75rem 1.5rem 1.75rem',
+    textAlign: 'center',
+    padding: '0 1.75rem 1.75rem 1.75rem',
     transition: '.3s',
     '& a': {
       '& svg': {
