@@ -14,7 +14,7 @@ function Section({ id, className, title, subtitle, children }: SectionProps) {
   const classes = useStyles();
 
   return (
-    <section id={id} className={`${className} ${classes.container} container`}>
+    <section id={id} className={`${className} ${classes.container}`}>
       <header>
         <h2 className={classes.headerTitle}>{title}</h2>
         <span className={classes.headerSubtitle}>{subtitle}</span>

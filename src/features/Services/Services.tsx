@@ -61,7 +61,7 @@ function Services() {
         >
           <span className={classes.services__button}>
             <ButtonLink onClick={handleActiveModal} id="buttonCardUiUx">
-              <span>ViewMore</span>
+              <span>View More</span>
               <UilArrowRight size={myIconSizes.small} />
             </ButtonLink>
           </span>
@@ -98,7 +98,7 @@ function Services() {
         >
           <span className={classes.services__button}>
             <ButtonLink onClick={handleActiveModal} id="buttonCardFront">
-              <span>ViewMore</span>
+              <span>View More</span>
               <UilArrowRight size={myIconSizes.small} />
             </ButtonLink>
           </span>
@@ -135,7 +135,7 @@ function Services() {
         >
           <span className={classes.services__button}>
             <ButtonLink onClick={handleActiveModal} id="buttonCardBranding">
-              <span>ViewMore</span>
+              <span>View More</span>
               <UilArrowRight size={myIconSizes.small} />
             </ButtonLink>
           </span>

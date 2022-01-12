@@ -18,7 +18,7 @@ const { REACT_APP_LINKEDIN, REACT_APP_GITHUB, REACT_APP_INSTAGRAM } =
 function Home() {
   const classes = useStyles();
   return (
-    <Section id="home" className={`${classes.home} container`}>
+    <Section id="home" className={classes.home}>
       <div className={`${classes.home__container} container grid`}>
         <div className={`${classes.home__content} grid`}>
           <div className={`${classes.home__social}`}>

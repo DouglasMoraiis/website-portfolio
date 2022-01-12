@@ -6,7 +6,8 @@ export const useStyles = makeStyles({
   services: {},
   services__container: {
     gap: '1.5rem',
-    gridTemplateColumns: 'repeat(2, 1fr)'
+    gridAutoRows: 'column',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(9.5rem, 1fr))'
   },
   services__modal_ul: {
     padding: 0,

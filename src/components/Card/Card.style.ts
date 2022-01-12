@@ -6,7 +6,7 @@ export const useStyles = makeStyles({
   content: {
     position: 'relative',
     background: myColors.containerColor,
-    padding: '2.5rem 2rem 1.75rem 1.5rem',
+    padding: '3.5rem 1.5rem 2.25rem 2rem',
     borderRadius: '.25rem',
     boxShadow: '0 2px 4px rgba(0, 0, 0, .15)',
     transition: '.3s',
@@ -23,7 +23,7 @@ export const useStyles = makeStyles({
     marginBottom: myMarginBottom.mb1
   },
   title: {
-    wordSpacing: '20rem',
+    wordSpacing: '100rem',
     fontSize: myFonts.fontSize.h3,
     marginBottom: myMarginBottom.mb1
   }
