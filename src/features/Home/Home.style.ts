@@ -15,7 +15,7 @@ export const useStyles = makeStyles({
   home__social: {
     display: 'grid',
     gridTemplateColumns: 'max-content',
-    rowGap: '1.25rem'
+    rowGap: '1.5rem'
   },
   home__img: {
     display: 'flex',
