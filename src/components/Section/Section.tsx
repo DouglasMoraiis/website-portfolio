@@ -15,10 +15,12 @@ function Section({ id, className, title, subtitle, children }: SectionProps) {
 
   return (
     <section id={id} className={`${className} ${classes.container}`}>
-      <header>
-        <h2 className={classes.headerTitle}>{title}</h2>
-        <span className={classes.headerSubtitle}>{subtitle}</span>
-      </header>
+      {title && subtitle && (
+        <header>
+          <h2 className={classes.headerTitle}>{title}</h2>
+          <span className={classes.headerSubtitle}>{subtitle}</span>
+        </header>
+      )}
       {children}
     </section>
   );

@@ -3,7 +3,7 @@ import React from 'react';
 import { useStyles } from './Button.style';
 
 type ButtonProps = {
-  href: string;
+  href?: string;
   className?: string;
   target?: string;
   download?: string;
