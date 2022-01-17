@@ -6,3 +6,4 @@ export { default as Qualification } from './Qualification/Qualification';
 export { default as Services } from './Services/Services';
 export { default as Skills } from './Skills/Skills';
 export { default as NewProject } from './NewProject/NewProject';
+export { default as Testimonial } from './Testimonial/Testimonial';

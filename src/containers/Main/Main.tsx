@@ -5,7 +5,9 @@ import {
   Services,
   Portfolio,
   Contact,
-  Skills
+  Skills,
+  NewProject,
+  Testimonial
 } from '../../features';
 import { useStyles } from './Main.style';
 
@@ -19,6 +21,8 @@ function Main() {
       <Qualification />
       <Services />
       <Portfolio />
+      <NewProject />
+      <Testimonial />
       {/* <Contact /> */}
     </main>
   );
