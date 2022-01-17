@@ -7,7 +7,7 @@ import { useStyles } from './Contact.style';
 function Contact() {
   const classes = useStyles();
   return (
-    <Section id="about" className={`${classes.about} container`}>
+    <Section id="contact" className={`${classes.about} container`}>
       <h1>h1</h1>
     </Section>
   );
